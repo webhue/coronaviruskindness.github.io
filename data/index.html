@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Explore Data</title>
+    <meta name="author" content="Kevin Dick">
+    <meta content="Display Coronavirus Kindness Project data as a searchable and filterable HTML table" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,600;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../map.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div id='explore-data'></div>
+'
+<!-- Load all Table-Related Scripts Here -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.csv.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="js/csv_to_html_table.js"></script>
+<script>
+//my custom function that creates a hyperlink
+function format_link(link){
+  if (link)
+      return "<a href='" + link + "' target='_blank'>Visit Page</a>";
+    else
+      return "";
+}
+
+// initializing the table
+CsvToHtmlTable.init({
+  csv_path: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSx-MgeekVffmrTB7oA7AhlGP7aEpcZIDnFBLCBQL5mEUKNnYVzoR-hT_kMuA6sIEdlLmyihIJ1oO49/pub?gid=1652908691&single=true&output=csv',
+  element: 'explore-data',
+  allow_download: false,
+  csv_options: {separator: ','},
+  datatables_options: {"paging": false},
+  custom_formatting: [[0, format_link]] //execute the function on the 1st column of every row
+});
+</script>
+</body>
+<html>
