@@ -103,7 +103,7 @@ table{
 }
 
 /* Navbar links */
-#navbar a {
+.header-link {
   float: left;
   display: block;
   color: #eee;
