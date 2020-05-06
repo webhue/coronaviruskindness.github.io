@@ -63,7 +63,7 @@ html * {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     background-color: #ce1b81;
     color: white;
     text-align: center;
@@ -75,7 +75,7 @@ html * {
   display: block;
   color: #eee;
   text-align: center;
-  padding: 14px;
+  padding: 12px;
   text-decoration: none;
 }
 
