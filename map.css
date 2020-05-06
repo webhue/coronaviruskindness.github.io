@@ -3,6 +3,7 @@ html * {
 }
 
 .container {
+    margin-top: 30px;
     text-align: center;
 }
 .mapdiv {
@@ -96,35 +97,28 @@ table{
     vertical-align: middle;
 }
 
-/* Style the navbar */
-#navbar {
+/* The navigation bar */
+.navbar {
   overflow: hidden;
-  background-color: #ce1b81;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
-/* Navbar links */
-.header-link {
+/* Links inside the navbar */
+.navbar a {
   float: left;
   display: block;
-  color: #eee;
+  color: #ce1b81;
   text-align: center;
-  padding: 16px;
+  padding: 14px 16px;
   text-decoration: none;
 }
 
-/* Page content */
-.content {
-  padding: 16px;
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #eee;
+  color: black;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
