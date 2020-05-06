@@ -106,15 +106,15 @@ table{
 #navbar a {
   float: left;
   display: block;
-  color: #fff;
+  color: #eee;
   text-align: center;
-  padding: 0px;
+  padding: 16px;
   text-decoration: none;
 }
 
 /* Page content */
 .content {
-  padding: 0px;
+  padding: 16px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
