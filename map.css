@@ -70,9 +70,18 @@ html * {
     z-index: 99999;
 }
 
+.header a {
+  float: left;
+  display: block;
+  color: #eee;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .header a:hover {
   background: #eee;
-  color: white;
+  color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
