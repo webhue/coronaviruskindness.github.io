@@ -70,12 +70,6 @@ html * {
     z-index: 99999;
 }
 
-.header a {
-    float: left;
-    display: block;
-    color: #ce1b81;
-}
-
 .header a:hover {
   background: #eee;
   color: white;
