@@ -77,7 +77,7 @@ d3.csv(publishedData, function(d) {
 
 				// Set the HTML count for number of stories as we fly through them!
 				var totalaok = i + 1;
-				document.getElementById("total-aok").innerHTML = 'Number of Acts of Kindness: <font color="#c1006e" size="4">' + totalaok.toString() + '</font>';
+				document.getElementById("total-aok").innerHTML = '<b>Number of Acts of Kindness: <font color="#c1006e" size="4">' + totalaok.toString() + '</font></b>';
 			};
 			
 			// After parsing all entries, we need to close the table in the contribution section!
