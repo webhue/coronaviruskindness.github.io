@@ -76,7 +76,7 @@ d3.csv(publishedData, function(d) {
 				L.marker([data[i].lat, data[i].lon], {icon: heartMarker}).addTo(mymap).bindPopup("<b><a href='" + data[i].url + "' target='_blank'>" + data[i].title + "</a></b><br>Date: " + data[i].date + "<br>" + data[i].giver + " &#8594; " + data[i].recipient + "<br>"+ data[i].info + contributeHtml).openPopup();
 
 				// Set the HTML count for number of stories as we fly through them!
-				document.getElementById("total-aok").innerHTML = i.toString();
+				document.getElementById("total-aok").innerHTML = 'Number of Acts of Kindness: <font color="#c1006e" size="4">' + i.toString() + '</font>';
 			};
 			
 			// After parsing all entries, we need to close the table in the contribution section!
