@@ -3,7 +3,7 @@ function maintextToEnglish() {
 }
 
 function maintextToSpanish() {
-	document.getElementById("maintext").innerHTML = 'El <i>Coronavirus Kindness Project</i> se lanzó en abril de 2020 con el propósito de enfatizar actos de bondad en medio de la pandémia mundial que estamos atravesando. La mayoría de las noticias actuales son de índole negativo. Esto resulta en un aumento de ansiedad y puede afectar grandemente nuestra salud mental. Sin embargo, hay un sin número de actos positivos que ensenan nuestra humanidad colectiva y la bondad que todavía podemos tener. El objetivo de este proyecto es reunir estas historias en un lugar centralizado. De esta manera, podemos compartir estas historias de bondad a nivel local, nacional, y global para brindar esperanza en medio de las dificultades.';
+	document.getElementById("maintext").innerHTML = 'El <i>Coronavirus Kindness Project</i> se lanzó en abril de 2020 con el propósito de enfatizar actos de bondad en medio de la pandémia mundial que estamos atravesando. La mayoría de las noticias actuales son de índole negativo. Esto resulta en un aumento de ansiedad y puede afectar grandemente nuestra salud mental. Sin embargo, hay un sin número de actos positivos que ensenan nuestra humanidad colectiva y la bondad que todavía podemos tener. El objetivo de este proyecto es reunir estas historias en un lugar centralizado. De esta manera, podemos compartir estas historias de bondad a nivel local, nacional y global para brindar esperanza en medio de las dificultades.';
 }
 
 function maintextToFrench() {
