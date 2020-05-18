@@ -11,7 +11,7 @@ function maintextToFrench() {
 }
 
 function testimonialtextToEnglish() {
-	document.getElementById("testimonialext").innerHTML = "The <i>Coronavirus Kindness Project</i> will soon be collecting testimonial stories of acts of kindness amid the cornonavirus. If you have <b>given</b>, <b>received</b>, or <b>observed</b> an act of kindness during this global pandemic, we invite you to share it with us. By sharing your story, you may inspire others to engage in their own act of kindness, both locally and globally. Your testimonials may also contribute to an ongoing research project aimed at better understanding how acts of kindness arise and are spread during a global pandemic.<br><br><b>Would you like to share your story of kindness?</b><br><br>";
+	document.getElementById("testimonialtext").innerHTML = "The <i>Coronavirus Kindness Project</i> will soon be collecting testimonial stories of acts of kindness amid the cornonavirus. If you have <b>given</b>, <b>received</b>, or <b>observed</b> an act of kindness during this global pandemic, we invite you to share it with us. By sharing your story, you may inspire others to engage in their own act of kindness, both locally and globally. Your testimonials may also contribute to an ongoing research project aimed at better understanding how acts of kindness arise and are spread during a global pandemic.<br><br><b>Would you like to share your story of kindness?</b><br><br>";
 	document.getElementById("testimonialquest").innerHTML = "If you have any questions about out project, please contact us at: <a href='mailto:coronaviruskindnessproject@gmail.com'>coronaviruskindnessproject@gmail.com</a>";
 }
 
