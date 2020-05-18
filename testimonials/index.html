@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://kindness-amid-coronavirus.com/translate.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,600;1,200&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../map.css">
 </head>
@@ -37,7 +38,7 @@
 			<br><br>
 			<h1>Testimonials of Kindness Amid the Coronavirus</h1>
 			<h3>Share your  Stories of Kindness and Humanity related to the Pandemic</h3>
-			<p>
+			<p id='testimonialtext'>
 			The <i>Coronavirus Kindness Project</i> will soon be collecting testimonial stories of acts of kindness amid the cornonavirus. If you have <b>given</b>, <b>received</b>, or <b>observed</b> an act of kindness during this global pandemic, we invite you to share it with us. By sharing your story, you may inspire others to engage in their own act of kindness, both locally and globally. Your testimonials may also contribute to an ongoing research project aimed at better understanding how acts of kindness arise and are spread during a global pandemic.
 			<br><br>
 			<b>Would you like to share your story of kindness?</b><br><br>
@@ -45,7 +46,11 @@
 			<!-- Qualtrics Testimonial Link to go into this AHREF -->
 			<a href='' target='_blank'><button class="button"><b>Submit your Testimonal Here</b></button></a>
 			&nbsp;&nbsp;&nbsp;
+			<button class="button" onmouseover='testimonialtextToSpanish();' onmouseout='testimonialtextToEnglish();'><b>Espanol</b></button>
+			&nbsp;&nbsp;&nbsp;
 			<a href='https://kindness-amid-coronavirus.com/docs/CvKP-Testimonial-EN.pdf' target='_blank'><button class="button"><b>PDF [EN]</b></button></a>
+			&nbsp;&nbsp;&nbsp;
+                        <a href='https://kindness-amid-coronavirus.com/docs/CvKP-Testimonial-ES.pdf' target='_blank'><button class="button"><b>PDF [ES]</b></button></a>
 
 			<br><br>
 			If you have any questions about out project, please contact us at: <a href="mailto:coronaviruskindnessproject@gmail.com">coronaviruskindnessproject@gmail.com</a>
