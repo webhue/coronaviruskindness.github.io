@@ -2,20 +2,10 @@ html * {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.container {
-  margin-top: 30px;
-  text-align: center;
-}
 .mapdiv {
   width: 1000px;
   height: 600px;
   margin: 5px auto;
-}
-.description {
-  width: 800px;
-  height: 400px;
-  margin: 5px auto;
-  text-align: left;
 }
 
 .contribution {
@@ -31,13 +21,6 @@ html * {
   margin-left: auto;
   margin-right: auto;
   height: 100px;
-}
-
-.partnerships {
-  width: 800px;
-  height: 150px;
-  margin: 5px auto;
-  text-align: center;
 }
 
 .explore {
