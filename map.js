@@ -48,7 +48,6 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 // Load all data and set to the map
 //d3.csv("data.csv", function(d) {
 d3.csv(publishedData, function(d) {
-	for d in JSON.parse(sheetData){
 	// Jitter each location slightly to prevent overlap
         var jittered = jitter(parseFloat(d.latitude), parseFloat(d.longitude), 0.3); // Jitter with radius 100m (0.1kms)
 	return {
@@ -62,7 +61,7 @@ d3.csv(publishedData, function(d) {
 		recipient : d.recipient,
 		contribute: d.contribute
 		};
-		}):.then(function(data) {
+		}).then(function(data) {
 			for(var i = 0; i < data.length; i++){
 				console.log(data[i]);
 				if (data[i].lat == "" || data[i].lon == "") continue;
@@ -89,5 +88,3 @@ d3.csv(publishedData, function(d) {
 			// Wrap wording in all table descriptions
 			//document.getElementsByTagName("td").style.wordWrap = "break-word";
 		});
-
-;
