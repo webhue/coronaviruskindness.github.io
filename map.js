@@ -1,7 +1,8 @@
 // This is the published Google Sheet from which the data are obtained.
 //var publishedData = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSx-MgeekVffmrTB7oA7AhlGP7aEpcZIDnFBLCBQL5mEUKNnYVzoR-hT_kMuA6sIEdlLmyihIJ1oO49/pub?gid=1652908691&single=true&output=csv';
 //var publishedData = 'https://spreadsheets.google.com/tq?key=1gPzJmXBSq8SPVccbsu4g5tYZQZi0ac0u2c2hOFRPx2I&tqx=out:csv';
-var publishedData = 'https://spreadsheets.google.com/feeds/cells/1gPzJmXBSq8SPVccbsu4g5tYZQZi0ac0u2c2hOFRPx2I/orc3knd/public/full?alt=json';
+//var publishedData = 'https://spreadsheets.google.com/feeds/cells/1gPzJmXBSq8SPVccbsu4g5tYZQZi0ac0u2c2hOFRPx2I/orc3knd/public/full?alt=json';
+var publishedData = 'data.csv';
 
 var rad_Earth  = 6378.16;
 var one_degree = (2 * Math.PI * rad_Earth) / 360;
@@ -46,9 +47,7 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 
 // Load all data and set to the map
 //d3.csv("data.csv", function(d) {
-//d3.csv(publishedData, function(d) {
-function sheetLoaded(sheetData) {
-	console.log(sheetData);
+d3.csv(publishedData, function(d) {
 	for d in JSON.parse(sheetData){
 	// Jitter each location slightly to prevent overlap
         var jittered = jitter(parseFloat(d.latitude), parseFloat(d.longitude), 0.3); // Jitter with radius 100m (0.1kms)
@@ -91,10 +90,4 @@ function sheetLoaded(sheetData) {
 			//document.getElementsByTagName("td").style.wordWrap = "break-word";
 		});
 
-
-
-$.ajax({
-  url: "https://spreadsheets.google.com/feeds/cells/1gPzJmXBSq8SPVccbsu4g5tYZQZi0ac0u2c2hOFRPx2I/orc3knd/public/full",
-  dataType: "jsonp",
-  jsonpCallback: "sheetLoaded"
-});
+;
