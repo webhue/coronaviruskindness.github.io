@@ -1,14 +1,69 @@
+<!DOCTYPE html>
 <html>
-	<head>
-	</head>
-	<body>
-	<h1>Page Currently Under Construction!</h1>
-	<br>
-	<p>In the meantime, help us add news stories of kindness to our map: <a href="https://forms.gle/Hudr9CAozHjPjZ7w8">Submit a Story</a>!
-	<br>
-	Kindly,
-	<br>
-	<i>The Coronavirus Kindness Team</i>
-	</p>
-	</body>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163605850-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-163605850-1');
+        </script>	
+
+	<title>Kindness Amid the Coronavirus</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/kindness-marker-square.png" />	
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://kindness-amid-coronavirus.com/translate.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,600;1,200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://kindness-amid-coronavirus.com/map.css">
+</head>
+
+<body>
+	<!-- JSONP Addition to Resolve CORS-Issue 
+	<script src="https://spreadsheets.google.com/feeds/cells/1gPzJmXBSq8SPVccbsu4g5tYZQZi0ac0u2c2hOFRPx2I/orc3knd/public/full?alt=json&callback=sheetLoaded"></script>
+	-->
+       <div class="header">
+ 	      <a href="https://kindness-amid-coronavirus.com/">Home</a>
+ 	      <a href="https://forms.gle/Hudr9CAozHjPjZ7w8">Submit a<br>News Story</a>
+ 	      <a href="https://kindness-amid-coronavirus.com/testimonials/">Submit a<br>Testimonial</a>
+ 	      <a href="https://kindness-amid-coronavirus.com/contributors/">Become a<br>Contributor</a>
+ 	      <a href="mailto:coronaviruskindnessproject@gmail.com">Contact</a>
+       </div>
+
+	<div class="container">
+		<div class="description">
+			<br><br>
+			<h1>Contribuutors to the Coronavirus Kindness Project</h1>
+			<h3>Help Find and Share Stories of Acts of Kindness Around the World</h3>
+			<p id='maintext'>
+			The <i>Coronavirus Kindness Project</i> was launched in April 2020 to track and visualize news stories of kindness and acts of humanity as the world collectively faces the COVID-19 pandemic. We invite you to help spread stories of acts of kindness around the world. As a colaborator, your involvement and a brief tagline will be advertised on this page. We ask that our curators help identify and submit a minimum of 20 stories each week. All involvement and partnership with the Coronavirus Kindness Project is voluntary and non-compensated. Thank you for helping us show that Kindness is Contagious! <br>  
+			</p>
+		</div>
+		
+		
+		<!-- Parnterships & Contributors -->
+                <div class='partnerships'>
+                        <h3> Partnerships &amp; Contributors</h3>
+			<a href="https://www.cognetik.com/" target="_blank">
+                        <img class="partner" border="0" alt="Cognetiks" src="../img/cognetik-partner.png"/></a>
+                        <a href="http://archiveofkindness.mystrikingly.com/" target="_blank">
+                        <img class="partner" border="0" alt="Archive of Kindness" src="../img/archive-of-kindness-partner.png"/></a>
+                        <a href="https://www.covid19recovery.net/" target="_blank">
+                        <img class="partner" border="0" alt="COVID19 Recovery" src="../img/covid19-recovery-partner.png"/></a>
+                </div>
+
+	
+	<div class="footer">
+		<p> The Coronavirus Kindness Project | Developed by <a href="https://www.linkedin.com/in/dickkevin/"><font color="white"><b>Kevin Dick</b></font></a> (Carleton University) | Curators: <a href="https://med.fsu.edu/directory/full?directoryID=22215&nav=201"><font color="white"><b>Vinita Akula</b></font></a> &amp; <a href="https://med.fsu.edu/directory/full?directoryID=20394&nav=201"><font color="white"><b>Gabby Cintron</b></font></a> (Florida State University)</p>
+	</div>
+
+</body>
 </html>
+
+
