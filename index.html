@@ -1,255 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-163605850-1"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-163605850-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-			gtag('config', 'UA-163605850-1');
-		</script>
+      gtag('config', 'UA-163605850-1');
+    </script>
 
-		<title>Kindness Amid the Coronavirus</title>
+    <title>Kindness Amid the Coronavirus</title>
 
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-			crossorigin="anonymous"
-		/>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
 
-		<link
-			rel="icon"
-			type="image/png"
-			href="img/kindness-marker-square.png"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-			integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-			crossorigin=""
-		/>
-		<script
-			src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-			integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-			crossorigin=""
-		></script>
-		<script src="https://d3js.org/d3.v5.min.js"></script>
-		<script src="https://kindness-amid-coronavirus.com/translate.js"></script>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,600;1,200&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="map.css" />
-		<!-- <link rel="stylesheet" href="data/css/navbar.css" /> -->
-	</head>
+    <link rel="icon" type="image/png" href="img/kindness-marker-square.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://kindness-amid-coronavirus.com/translate.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="map.css" />
+    <!-- <link rel="stylesheet" href="data/css/navbar.css" /> -->
+  </head>
 
-	<body>
-		<nav
-			class="navbar sticky-top navbar-expand-lg navbar-dark"
-			style="background-color: #ce1b81;"
-		>
-			<a class="navbar-brand" href="/">Home</a>
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNavAltMarkup"
-				aria-controls="navbarNavAltMarkup"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a
-						class="nav-item nav-link"
-						href="https://forms.gle/Hudr9CAozHjPjZ7w8"
-						>Submit a News Story</a
-					>
-					<a class="nav-item nav-link" href="/testimonials"
-						>Submit a Testimonial</a
-					>
-					<a class="nav-item nav-link" href="/contributors"
-						>Become a Contributor</a
-					>
-					<a
-						class="nav-item nav-link"
-						href="mailto:coronaviruskindnessproject@gmail.com"
-						>Contact</a
-					>
-				</div>
-			</div>
-		</nav>
+  <body>
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-dark"
+      style="background-color: #ce1b81;"
+    >
+      <a class="navbar-brand" href="/">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a
+            class="nav-item nav-link"
+            href="https://forms.gle/Hudr9CAozHjPjZ7w8"
+            >Submit a News Story</a
+          >
+          <a class="nav-item nav-link" href="/testimonials"
+            >Submit a Testimonial</a
+          >
+          <a class="nav-item nav-link" href="/contributors"
+            >Become a Contributor</a
+          >
+          <a
+            class="nav-item nav-link"
+            href="mailto:coronaviruskindnessproject@gmail.com"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
 
-		<!-- Description -->
-		<div class="container">
-			<div class="description">
-				<!-- <br /><br /> -->
-				<h1 class="col-12">Kindness Amid the Coronavirus</h1>
-				<h3>
-					Tracking Stories of Kindness and Humanity related to the
-					Pandemic
-				</h3>
-				<p id="maintext">
-					The <i>Coronavirus Kindness Project</i> was launched in
-					April 2020 to track and visualize news stories of kindness
-					and acts of humanity as the world collectively faces the
-					COVID-19 pandemic. While we consume the barrage of
-					information related to the pandemic, its predominantly
-					negative nature may result in increased anxiety and take a
-					toll on our mental health. However, stories of humanity and
-					kindness shine through! The goal of this project is to
-					cultivate and share those stories; to be a centralized
-					location of the positivity, kindness, and humanity of our
-					local, national, and global neighbours.<br />
-				</p>
-				<p id="total-aok"><b>Number of Acts of Kindness:</b></p>
-				<a href="https://twitter.com/CoVKindnessProj"
-					><img
-						src="img/twitter-logo.png"
-						alt="Twitter: "
-						style="width: 25px; height: 20px;"
-					/>@CoVKindnessProj</a
-				>
-				<a href="https://twitter.com/hashtag/kindnessiscontagious"
-					>#kindnessiscontagious</a
-				>
-				<br /><br />
-				<button
-					class="button"
-					onmouseover="maintextToSpanish();"
-					onmouseout="maintextToEnglish();"
-				>
-					<b>Espanol</b>
-				</button>
-				<button
-					class="button"
-					onmouseover="maintextToFrench();"
-					onmouseout="maintextToEnglish();"
-				>
-					<b>Francais</b>
-				</button>
-			</div>
+    <!-- Description -->
+    <div class="container">
+      <div class="description">
+        <!-- <br /><br /> -->
+        <h1 class="col-12">Kindness Amid the Coronavirus</h1>
+        <h3>
+          Tracking Stories of Kindness and Humanity related to the Pandemic
+        </h3>
+        <p id="maintext">
+          The <i>Coronavirus Kindness Project</i> was launched in April 2020 to
+          track and visualize news stories of kindness and acts of humanity as
+          the world collectively faces the COVID-19 pandemic. While we consume
+          the barrage of information related to the pandemic, its predominantly
+          negative nature may result in increased anxiety and take a toll on our
+          mental health. However, stories of humanity and kindness shine
+          through! The goal of this project is to cultivate and share those
+          stories; to be a centralized location of the positivity, kindness, and
+          humanity of our local, national, and global neighbours.<br />
+        </p>
+        <p id="total-aok"><b>Number of Acts of Kindness:</b></p>
+        <a href="https://twitter.com/CoVKindnessProj"
+          ><img
+            src="img/twitter-logo.png"
+            alt="Twitter: "
+            style="width: 25px; height: 20px;"
+          />@CoVKindnessProj</a
+        >
+        <a href="https://twitter.com/hashtag/kindnessiscontagious"
+          >#kindnessiscontagious</a
+        >
+        <br /><br />
+        <button
+          class="button"
+          onmouseover="maintextToSpanish();"
+          onmouseout="maintextToEnglish();"
+        >
+          <b>Espanol</b>
+        </button>
+        <button
+          class="button"
+          onmouseover="maintextToFrench();"
+          onmouseout="maintextToEnglish();"
+        >
+          <b>Francais</b>
+        </button>
+      </div>
+      <div class="mapdiv" id="mapid"></div>
+      <script src="map.js"></script>
+    </div>
 
-			<div class="mapdiv" id="mapid"></div>
-			<script src="map.js"></script>
-			<!-- </div> -->
+    <!-- Parnterships & Contributors -->
+    <div class="partnerships row">
+      <h3 class="notthefirst col-12">Partnerships &amp; Contributors</h3>
+      <div class="partners col-12 col-md-6">
+        <a href="https://www.cognetik.com/" target="_blank">
+          <img
+            class="partner"
+            border="0"
+            alt="Cognetiks"
+            src="./img/cognetik-partner.png"
+        /></a>
+      </div>
+      <div class="partners col-12 col-md-6">
+        <a href="http://archiveofkindness.mystrikingly.com/" target="_blank">
+          <img
+            class="partner"
+            border="0"
+            alt="Archive of Kindness"
+            src="./img/archive-of-kindness-partner.png"
+        /></a>
+      </div>
+      <div class="partners col-12 col-md-6">
+        <a href="https://www.covid19recovery.net/" target="_blank">
+          <img
+            class="partner"
+            border="0"
+            alt="COVID19 Recovery"
+            src="./img/covid19-recovery-partner.png"
+        /></a>
+      </div>
+    </div>
 
-			<!-- Parnterships & Contributors -->
-			<div class="partnerships row">
-				<h3 class="notthefirst col-12">
-					Partnerships &amp; Contributors
-				</h3>
-				<div class="partners col-12 col-md-6">
-					<a
-						href="http://archiveofkindness.mystrikingly.com/"
-						target="_blank"
-					>
-						<img
-							class="partner"
-							alt="Archive of Kindness"
-							src="/img/archive-of-kindness-partner.png"
-						/>
-					</a>
-				</div>
-				<div class="partners col-12 col-md-6">
-					<a href="https://www.covid19recovery.net/" target="_blank">
-						<img
-							class="partner"
-							alt="COVID19 Recovery"
-							src="/img/covid19-recovery-partner.png"
-					/></a>
-				</div>
-			</div>
+    <!-- Data Section -->
+    <div class="explore row container">
+      <h3 class="notthefirst col-12">Explore the Data</h3>
+      <a
+        href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSx-MgeekVffmrTB7oA7AhlGP7aEpcZIDnFBLCBQL5mEUKNnYVzoR-hT_kMuA6sIEdlLmyihIJ1oO49/pub?gid=1652908691&single=true&output=csv"
+        ><button class="button"><b>Download Data</b></button></a
+      >
+      <iframe
+        class="sheetsIframe"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSx-MgeekVffmrTB7oA7AhlGP7aEpcZIDnFBLCBQL5mEUKNnYVzoR-hT_kMuA6sIEdlLmyihIJ1oO49/pubhtml?gid=1184088508&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false&amp;range=A1:D500"
+      ></iframe>
+      <!-- <iframe
+        style="border-style: solid; border-color: #eeeeee;"
+        src="data/index.html"
+        height="300"
+        width="100%"
+      ></iframe> -->
+    </div>
 
-			<!-- Data Section -->
-			<div class="explore row">
-				<h3 class="notthefirst col-12">Explore the Data</h3>
-				<a
-					href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSx-MgeekVffmrTB7oA7AhlGP7aEpcZIDnFBLCBQL5mEUKNnYVzoR-hT_kMuA6sIEdlLmyihIJ1oO49/pub?gid=1652908691&single=true&output=csv"
-					><button class="button"><b>Download Data</b></button></a
-				>
-				<iframe
-					style="border-style: solid; border-color: #eeeeee;"
-					src="data/index.html"
-					height="300"
-					width="100%"
-				></iframe>
-			</div>
-
-			<!-- Contribution Section -->
-			<div id="contribute" class="contribution">
-				<h3 class="notthefirst">
-					Initiatives you can Contribute to Around the World
-				</h3>
-				<table>
-					<!-- Taking off our GoFundMe	
+    <!-- Contribution Section -->
+    <div id="contribute" class="contribution container">
+      <h3 class="notthefirst">
+        Initiatives you can Contribute to Around the World
+      </h3>
+      <table>
+        <!-- Taking off our GoFundMe	
 			<tr><td><a href='' target='_blank'><button class="button"><b>Contribute</b></button></a></td><td>The <i>Coronavirus Kindness Project</i> is entirely volunteer-run. If you wish to support this initiative, consider contributing to our GoFundMe campaign; we would be immensely grateful!</td></tr><br>
 			-->
-				</table>
-			</div>
+      </table>
+    </div>
 
-			<!-- Parnterships & Contributors 
-		<div class='partnerships'>
-			<h3> Partnerships &amp; Contributors</h3>
-			<a href="http://archiveofkindness.mystrikingly.com/" target="_blank">
-			<img class="partner" border="0" alt="Archive of Kindness" src="./img/archive-of-kindness-partner.png"/></a>
-			<a href="https://www.covid19recovery.net/" target="_blank">
-    			<img class="partner" border="0" alt="COVID19 Recovery" src="./img/covid19-recovery-partner.png"/></a>
-		</div>-->
-			<!-- </div> -->
+    <div class="footer container-fluid">
+      <p>
+        The Coronavirus Kindness Project | Developed by
+        <a href="https://www.linkedin.com/in/dickkevin/"
+          ><font color="white"><b>Kevin Dick</b></font></a
+        >
+        (Carleton University) | Curators:
+        <a href="https://med.fsu.edu/directory/full?directoryID=22215&nav=201"
+          ><font color="white"><b>Vinita Akula</b></font></a
+        >
+        &amp;
+        <a href="https://med.fsu.edu/directory/full?directoryID=20394&nav=201"
+          ><font color="white"><b>Gabby Cintron</b></font></a
+        >
+        (Florida State University)
+      </p>
+    </div>
 
-		</div>
-
-		<div class="footer container-fluid">
-				<p>
-					The Coronavirus Kindness Project | Developed by
-					<a href="https://www.linkedin.com/in/dickkevin/"
-						><font color="white"><b>Kevin Dick</b></font></a
-					>
-					(Carleton University) | Curators:
-					<a
-						href="https://med.fsu.edu/directory/full?directoryID=22215&nav=201"
-						><font color="white"><b>Vinita Akula</b></font></a
-					>
-					&amp;
-					<a
-						href="https://med.fsu.edu/directory/full?directoryID=20394&nav=201"
-						><font color="white"><b>Gabby Cintron</b></font></a
-					>
-					(Florida State University)
-				</p>
-			</div>
-			
-		<script
-			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-			crossorigin="anonymous"
-		></script>
-	</body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
