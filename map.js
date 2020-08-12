@@ -1,6 +1,8 @@
 // This is the published Google Sheet from which the data are obtained.
-var publishedData = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSx-MgeekVffmrTB7oA7AhlGP7aEpcZIDnFBLCBQL5mEUKNnYVzoR-hT_kMuA6sIEdlLmyihIJ1oO49/pub?gid=1652908691&single=true&output=csv';
-
+//var publishedData = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSx-MgeekVffmrTB7oA7AhlGP7aEpcZIDnFBLCBQL5mEUKNnYVzoR-hT_kMuA6sIEdlLmyihIJ1oO49/pub?gid=1652908691&single=true&output=csv';
+//var publishedData = 'https://spreadsheets.google.com/tq?key=1gPzJmXBSq8SPVccbsu4g5tYZQZi0ac0u2c2hOFRPx2I&tqx=out:csv';
+//var publishedData = 'https://spreadsheets.google.com/feeds/cells/1gPzJmXBSq8SPVccbsu4g5tYZQZi0ac0u2c2hOFRPx2I/orc3knd/public/full?alt=json';
+var publishedData = 'data.csv';
 
 var rad_Earth  = 6378.16;
 var one_degree = (2 * Math.PI * rad_Earth) / 360;
@@ -86,6 +88,3 @@ d3.csv(publishedData, function(d) {
 			// Wrap wording in all table descriptions
 			//document.getElementsByTagName("td").style.wordWrap = "break-word";
 		});
-
-
-
