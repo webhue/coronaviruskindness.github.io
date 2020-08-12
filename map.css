@@ -7,13 +7,8 @@ html {
   min-height: 100%;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-
 .mapdiv {
-  width: 1000px;
+  width: 100%;
   height: 600px;
   margin: 5px auto;
 }
@@ -35,10 +30,10 @@ body {
 }
 
 .partnerships {
-  width: 800px;
-  height: 300px;
+  max-width: 1000px;
   margin: 5px auto;
   text-align: center;
+  justify-content: center;
 }
 
 .explore {
@@ -50,16 +45,17 @@ body {
 
 .footer {
   position: sticky;
-  /*left: 0;*/
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px;
+  min-height: 36px;
+  line-height: 36px;
   background-color: #ce1b81;
   color: white;
   z-index: 99999;
-  /*margin-top: 300px;*/
+}
+
+.footer p {
+  margin-bottom: 0;
 }
 
 .header {
@@ -152,4 +148,9 @@ table {
   padding: 4px;
   word-wrap: break-word;
   vertical-align: middle;
+}
+
+.sheetsIframe {
+  width: 100%;
+  height: 300px;
 }

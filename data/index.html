@@ -68,8 +68,7 @@
 
       // initializing the table
       CsvToHtmlTable.init({
-        csv_path:
-          'https://docs.google.com/spreadsheets/d/e/2PACX-1vSx-MgeekVffmrTB7oA7AhlGP7aEpcZIDnFBLCBQL5mEUKNnYVzoR-hT_kMuA6sIEdlLmyihIJ1oO49/pub?gid=1652908691&single=true&output=csv',
+        csv_path: '/data.csv',
         element: 'explore-data',
         allow_download: false,
         csv_options: { separator: ',' },
@@ -78,7 +77,27 @@
           order: [[2, 'desc']],
           columnDefs: [
             {
-              targets: [4, 5, 9, 10, 11],
+              targets: [
+                4,
+                5,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+              ],
               visible: false,
             },
             {
